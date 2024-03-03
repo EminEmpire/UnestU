@@ -7,6 +7,12 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+.nav-item:not(:last-child) {
+    border-right: 1px solid #000; /* Adds a border to all except the last item */
+    margin-right: .5rem; /* Right margin to add space after the border */
+    padding-right: .5rem; /* Right padding to space out the text from the border */
+}
+
 /* Custom navbar toggler */
 .navbar-toggler {
     border-color: rgba(0, 0, 0, 0.5); /* Optional: add border color if you want */
@@ -22,7 +28,7 @@ body {
 }
 
 .navbar-toggler:not(.collapsed) {
-    background-color: #cbcbcb; /* Set a background color when expanded */
+    background-color: #fffd85; /* Set a background color when expanded */
 }
 
 
