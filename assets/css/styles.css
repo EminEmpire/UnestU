@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Using Didact Gothic for the body font */
 body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
-/* Color Palette */
-:root {
-    --primary-color: #4f34ff; /* Vibrant Purple */
-    --secondary-color: #ff7f50; /* Coral for Orange */
-    --tertiary-color: #4682b4; /* Steel Blue for Additional Contrast */
-    --quaternary-color: #6a5acd; /* Slate Blue for Purple */
-}
-
 /* Navbar customization */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: #ffec3c
 }
 
 .nav-link {
-    color: var(--secondary-color);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: #000000
 }
 
 .nav-link:hover {
@@ -27,7 +22,7 @@ body {
 }
 
 #home {
-    background-color: #ffe689; /* A serene, deep lavender color */
+    background-color: #888888; /* A serene, deep lavender color */
     color: rgb(0, 0, 0);
     padding: 50px 20px;
     border-radius: 15px; /* Rounded borders for a modern look */
