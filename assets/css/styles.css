@@ -7,6 +7,25 @@ body {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+/* Custom navbar toggler */
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5); /* Optional: add border color if you want */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ensure the toggler is visible on all backgrounds when expanded */
+.navbar-toggler.collapsed {
+    background-color: transparent; /* Reset background when collapsed */
+}
+
+.navbar-toggler:not(.collapsed) {
+    background-color: #cbcbcb; /* Set a background color when expanded */
+}
+
+
 /* Navbar customization */
 .navbar-container {
     background-color: #ffec3c;
