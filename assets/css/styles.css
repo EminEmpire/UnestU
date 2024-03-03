@@ -45,11 +45,12 @@ body {
 .cookie-consent-banner {
     background-color: var(--primary-color);
     color: white;
-    padding: 20px;
+    padding: 10px; /* Reduced padding */
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    font-size: 14px; /* Adjusted font size */
 }
