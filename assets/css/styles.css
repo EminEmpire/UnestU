@@ -7,19 +7,33 @@ body {
 }
 
 /* Navbar customization */
-.navbar {
-    background-color: #ffec3c
+.navbar-container {
+    background-color: #ffec3c;
 }
+
+
 
 .nav-link {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
-    color: #000000
+    color: #000000;
 }
 
 .nav-link:hover {
-    color: var(--tertiary-color);
+    color: #444444;
+    text-decoration: underline;
 }
+
+.nav-buttons .btn {
+    margin-top: -35%; /* Adjust margin-top */
+    margin-left: -40%; /* Adjust margin-left */
+    border-radius: 0; /* Remove button border-radius */
+    border: 2px solid #000; /* Add black border */
+    font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
+    font-size: 1.7rem; /* Make button font size larger */
+    padding: 10px 25px; /* Increase padding to make button bigger */
+}
+
 
 #home {
     background-color: #888888; /* A serene, deep lavender color */
@@ -111,3 +125,4 @@ body {
         font-size: 2rem; /* Adjust heading size for smaller screens */
     }
 }
+
