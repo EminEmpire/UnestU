@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
 /* Using Didact Gothic for the body font */
 body {
     font-family: 'Didact Gothic', sans-serif;
@@ -9,8 +10,8 @@ body {
 /* Navbar customization */
 .navbar-container {
     background-color: #ffec3c;
+    position: relative;
 }
-
 
 
 .nav-link {
@@ -26,21 +27,28 @@ body {
     
 }
 
-.nav-buttons .btn {
+/* Container for both buttons */
+.nav-buttons {
+    display: flex; /* Align buttons horizontally */
+    justify-content: center; /* Center buttons in the container */
+    gap: 20px; /* Space between buttons */
+    position: absolute; /* Position the buttons absolutely within a relative container */
+    right: 140px; /* Move to the left by reducing the right value */
+    bottom: 20px; /* Move up by increasing the bottom value */
+}
+
+
+/* Individual button styling */
+.nav-button {
     border-radius: 0; /* Remove button border-radius */
     border: 2px solid #000; /* Add black border */
     font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
     font-size: 1.7rem; /* Make button font size larger */
     letter-spacing: 1px;
     padding: 10px 40px; /* Increase padding to make button bigger */
-    margin-top: -10vh;
-    margin-left: -9vw;
+
 }
 
-
-.nav-buttons .btn:first-child {
-    margin-right: 60%;
-}
 
 #home {
     background-color: #888888; /* A serene, deep lavender color */
@@ -110,8 +118,8 @@ body {
 }
 
 .cookie-consent-banner {
-    background-color: var(--tertiary-color);
-    color: white;
+    background-color: #24b3c0;
+    color: rgb(255, 255, 255);
     padding: 10px; /* Reduced padding */
     text-align: center;
     position: fixed;
@@ -120,41 +128,4 @@ body {
     width: 100%;
     z-index: 1000;
     font-size: 14px; /* Adjusted font size */
-}
-
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    #home {
-        padding: 30px 10px; /* Adjust padding for smaller screens */
-    }
-    #home h1 {
-        font-size: 2rem; /* Adjust heading size for smaller screens */
-    }
-}
-
-
-/* Media query for phone screens */
-@media (max-width: 576px) {
-    .nav-buttons .btn {
-        padding: 10px 20px; /* Adjusted padding for phone screens */
-        margin-top: 0vh; /* Adjusted margin-top for phone screens */
-        margin-left: 0vw; /* Adjusted margin-left for phone screens */
-        width: 100%;
-    }
-
-    .nav-buttons .btn:first-child {
-        margin-bottom: 1%; /* Add margin-bottom to create spacing between buttons */
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-    /* Media query for tablets */
-    .nav-buttons .btn {
-        padding: 0px 0px; /* Adjusted padding for tablet screens */
-        margin-top: 0vh; /* Adjusted margin-top for tablet screens */
-        margin-left: -70vw; /* Adjusted margin-top for tablet screens */
-        width: 100vw;
-    }
-
 }
