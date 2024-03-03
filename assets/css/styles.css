@@ -16,24 +16,31 @@ body {
 .nav-link {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
+    letter-spacing: 1px;
     color: #000000;
 }
 
 .nav-link:hover {
-    color: #444444;
+    color: #000000;
     text-decoration: underline;
+    
 }
 
 .nav-buttons .btn {
-    margin-top: -35%; /* Adjust margin-top */
-    margin-left: -40%; /* Adjust margin-left */
     border-radius: 0; /* Remove button border-radius */
     border: 2px solid #000; /* Add black border */
     font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
     font-size: 1.7rem; /* Make button font size larger */
-    padding: 10px 25px; /* Increase padding to make button bigger */
+    letter-spacing: 1px;
+    padding: 10px 40px; /* Increase padding to make button bigger */
+    margin-top: -10vh;
+    margin-left: -9vw;
 }
 
+
+.nav-buttons .btn:first-child {
+    margin-right: 60%;
+}
 
 #home {
     background-color: #888888; /* A serene, deep lavender color */
