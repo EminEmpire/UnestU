@@ -7,9 +7,10 @@ body {
 
 /* Color Palette */
 :root {
-    --primary-color: #ff7f50; /* Coral for Orange */
-    --secondary-color: #6a5acd; /* SlateBlue for Purple */
-    --tertiary-color: #4682b4; /* SteelBlue for Blue */
+    --primary-color: #4f34ff; /* Vibrant Purple */
+    --secondary-color: #ff7f50; /* Coral for Orange */
+    --tertiary-color: #4682b4; /* Steel Blue for Additional Contrast */
+    --quaternary-color: #6a5acd; /* Slate Blue for Purple */
 }
 
 /* Navbar customization */
@@ -24,6 +25,61 @@ body {
 .nav-link:hover {
     color: var(--tertiary-color);
 }
+
+
+
+/* Custom button base styling */
+.custom-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 30px; /* Increased padding for a larger button */
+    font-size: 20px; /* Larger font size for better readability */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for multiple properties */
+    border: 2px solid transparent; /* Base state border */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Custom Button Enhancements */
+.custom-button {
+    margin-top: 20px; /* Additional spacing from text */
+    padding: 1%;
+    font-weight: bold; /* Bold font for button text */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease; /* Smooth transitions for interactive feedback */
+}
+
+.custom-button:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow for a lifted effect */
+}
+
+
+/* "I Want to Help" button specific styling */
+.help {
+    background-color: var(--primary-color); /* Vibrant Purple */
+}
+
+/* "I Need Help" button specific styling */
+.need {
+    background-color: var(--secondary-color); /* Slate Blue */
+}
+
+/* Hover effects for both buttons */
+.custom-button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for lifting effect */
+}
+
+.help:hover {
+    background-color: #3e2fc7; /* Slightly darker shade of vibrant purple for hover */
+}
+
+.need:hover {
+    background-color: #d27e5f; /* Slightly darker shade of slate blue for hover */
+}
+
 
 /* Footer customization */
 .footer {
@@ -43,7 +99,7 @@ body {
 }
 
 .cookie-consent-banner {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: white;
     padding: 10px; /* Reduced padding */
     text-align: center;
@@ -53,4 +109,15 @@ body {
     width: 100%;
     z-index: 1000;
     font-size: 14px; /* Adjusted font size */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    #home h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
 }
