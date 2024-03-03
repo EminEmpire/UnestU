@@ -26,59 +26,54 @@ body {
     color: var(--tertiary-color);
 }
 
+#home {
+    background-color: #ffe689; /* A serene, deep lavender color */
+    color: rgb(0, 0, 0);
+    padding: 50px 20px;
+    border-radius: 15px; /* Rounded borders for a modern look */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
 
 
-/* Custom button base styling */
+.image-container img.rounded-circle {
+    height: 30rem;
+    width: auto;
+    padding: 5px; /* Padding around the image */
+    background-color: white; /* Background to contrast the image */
+}
+
 .custom-button {
-    display: inline-block;
-    margin: 0 10px;
-    padding: 15px 30px; /* Increased padding for a larger button */
-    font-size: 20px; /* Larger font size for better readability */
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease; /* Smooth transition for multiple properties */
-    border: 2px solid transparent; /* Base state border */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-size: 1.25rem; /* Larger font size for readability */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Capitalize text */
+    padding: 15px 30px; /* Larger padding for a bigger button appearance */
+    color: #ffffff; /* White text for better contrast */
+    border-radius: 0.5rem; /* Rounded corners */
+    margin: 0 5px; /* Ensure buttons don't touch */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-flex; /* Align icons and text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between icon and text */
 }
 
-/* Custom Button Enhancements */
-.custom-button {
-    margin-top: 20px; /* Additional spacing from text */
-    padding: 1%;
-    font-weight: bold; /* Bold font for button text */
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease; /* Smooth transitions for interactive feedback */
-}
-
-.custom-button:hover {
-    transform: scale(1.05); /* Slight scale-up on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Enhanced shadow for a lifted effect */
-}
-
-
-/* "I Want to Help" button specific styling */
 .help {
-    background-color: var(--primary-color); /* Vibrant Purple */
+    background-color: #007bff; /* Bootstrap's primary blue for "GIVE HELP" */
 }
 
-/* "I Need Help" button specific styling */
 .need {
-    background-color: var(--secondary-color); /* Slate Blue */
+    background-color: #dc3545; /* Bootstrap's danger red for "GET HELP" */
 }
 
-/* Hover effects for both buttons */
+.custom-button i {
+    font-size: 1.5rem; /* Larger icons */
+}
+
 .custom-button:hover {
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for lifting effect */
+    opacity: 0.8; /* Slight opacity change on hover for feedback */
 }
 
-.help:hover {
-    background-color: #3e2fc7; /* Slightly darker shade of vibrant purple for hover */
-}
-
-.need:hover {
-    background-color: #d27e5f; /* Slightly darker shade of slate blue for hover */
-}
 
 
 /* Footer customization */
