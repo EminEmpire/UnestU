@@ -133,3 +133,28 @@ body {
     }
 }
 
+
+/* Media query for phone screens */
+@media (max-width: 576px) {
+    .nav-buttons .btn {
+        padding: 10px 20px; /* Adjusted padding for phone screens */
+        margin-top: 0vh; /* Adjusted margin-top for phone screens */
+        margin-left: 0vw; /* Adjusted margin-left for phone screens */
+        width: 100%;
+    }
+
+    .nav-buttons .btn:first-child {
+        margin-bottom: 1%; /* Add margin-bottom to create spacing between buttons */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Media query for tablets */
+    .nav-buttons .btn {
+        padding: 0px 0px; /* Adjusted padding for tablet screens */
+        margin-top: 0vh; /* Adjusted margin-top for tablet screens */
+        margin-left: -70vw; /* Adjusted margin-top for tablet screens */
+        width: 100vw;
+    }
+
+}
