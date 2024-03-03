@@ -24,7 +24,6 @@ body {
 .nav-link:hover {
     color: #000000;
     text-decoration: underline;
-    
 }
 
 /* Container for both buttons */
@@ -46,12 +45,27 @@ body {
     font-size: 1.7rem; /* Make button font size larger */
     letter-spacing: 1px;
     padding: 10px 40px; /* Increase padding to make button bigger */
-
 }
 
+.nav-button:hover {
+    border: 2px solid #000000; /* Add black border */
+}
+
+.btnsmsc {
+    border-radius: 0; /* Remove button border-radius */
+    border: 2px solid #000; /* Add black border */
+    font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
+    letter-spacing: 2px;
+    font-size: 1.3rem; /* Make button font size larger */
+    padding: 15px; /* Increase padding to make button bigger */
+}
+
+.btnsmsc:hover {
+    border: 2px solid #000000; /* Add black border */
+}
 
 #home {
-    background-color: #888888; /* A serene, deep lavender color */
+    background-color: #ededed; /* A serene, deep lavender color */
     color: rgb(0, 0, 0);
     padding: 50px 20px;
     border-radius: 15px; /* Rounded borders for a modern look */
