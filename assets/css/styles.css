@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-toggler:not(.collapsed) {
-    background-color: #fffd85; /* Set a background color when expanded */
+    background-color: #fbfbfb; /* Set a background color when expanded */
 }
 
 
