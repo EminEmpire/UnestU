@@ -107,7 +107,7 @@ body {
     right: 0;
     width: 49%; /* This will cover the right half of the screen */
     height: 65%; /* Adjust the height to your preference */
-    background-color: #5ebe7e; /* Your lanyard green color */
+    background-color: #28A745; /* Your lanyard green color */
     z-index: -1; /* Ensure it's behind your content */
     transform: rotate(7deg); /* Rotates the div -95 degrees around the top right corner */
     display: flex;
