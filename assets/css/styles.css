@@ -252,3 +252,40 @@ body {
     }
     
 }
+
+/* Adjustments for tablet screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .lanyard {
+        display: none; /* Hide the lanyard on tablet screens as well */
+    }
+
+    .g-image-container img {
+        display: none; /* Hide the image inside g-image-container on tablet screens */
+    }
+
+    .green-background {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0; /* Full width */
+        width: 100%;
+        height: 550px; /* Adjusted height for tablet screens */
+        background-image: url('../media/img/heroimg.jpg');
+        background-size: cover; /* Ensure the background covers the area */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat;
+        background-position-y: -140px; /* Adjust vertical positioning if needed */
+        transform: none;
+        margin-top: 10px; /* Adjust top margin if needed */
+    }
+}
+
+/* Adjustments for screens larger than 1024px */
+@media (min-width: 1025px) {
+    .green-background {
+     overflow: hidden;
+    }
+    .body {
+        overflow: hidden;
+    }
+}
