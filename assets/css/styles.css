@@ -251,6 +251,12 @@ body {
         margin-top: 10px; /* Add some space above the green background */
     }
     
+    h1 {
+        font-size: 35px; /* Adjust as needed */
+    }
+    p {
+        font-size: 24px; /* Adjust as needed */
+    }
 }
 
 /* Adjustments for tablet screens */
