@@ -225,3 +225,30 @@ body {
     z-index: 1000;
     font-size: 14px; /* Adjusted font size */
 }
+
+@media (max-width: 768px) {
+    .lanyard {
+        display: none;
+    }
+
+    .g-image-container img {
+        display: none;
+    }
+
+    .green-background {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0; /* Make the green background full width */
+        width: 100%;
+        height: 450px; /* Specify a fixed height */
+        background-image: url('../media/img/heroimg.jpg'); /* Use your image here */
+        background-size: cover; /* Cover might work better with a fixed height */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position-y: -90px; 
+        transform: none; /* Remove rotation for small screens */
+        margin-top: 10px; /* Add some space above the green background */
+    }
+    
+}
