@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
 
 /* Using Didact Gothic for the body font */
 body {
     font-family: 'Didact Gothic', sans-serif;
 }
+
 
 .nav-item:not(:last-child) {
     border-right: 1px solid #000; /* Adds a border to all except the last item */
@@ -86,20 +87,24 @@ body {
     border: 0px solid #000000; /* Add black border */
 }
 
+
+
 #home {
-    background-color: #ededed; /* A serene, deep lavender color */
+    background-color: #ffffffd7; 
+    font-weight: 200;
+    font-style: normal;
     color: rgb(0, 0, 0);
-    padding: 50px 20px;
-    border-radius: 15px; /* Rounded borders for a modern look */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: all 0.3s ease-in-out;
+    padding: 20px 20px;
+}
+
+#home h1 {
+    font-family: "Spectral SC", serif;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 
-.image-container img.rounded-circle {
-    height: 3%;
-    width: auto;
-}
 
 .custom-button {
     font-size: 1.25rem; /* Larger font size for readability */
@@ -162,12 +167,4 @@ body {
     width: 100%;
     z-index: 1000;
     font-size: 14px; /* Adjusted font size */
-}
-
-
-@media only screen and (max-width: 768px) {
-    .image-container img.rounded-circle {
-        height: 20rem;
-        width: auto;
-    }
 }
