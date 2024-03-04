@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Using Didact Gothic for the body font */
 body {
-    font-family: 'Didact Gothic', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -44,7 +44,7 @@ body {
 /* Position the lanyard image */
 .lanyard {
     position: absolute;
-    bottom: -60px; /* Adjust this value as needed to position the lanyard below the navbar */
+    bottom: -450px; /* Adjust this value as needed to position the lanyard below the navbar */
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Ensure the lanyard is behind the navbar */
@@ -100,15 +100,44 @@ body {
 
 
 
+.green-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49%; /* This will cover the right half of the screen */
+    height: 65%; /* Adjust the height to your preference */
+    background-color: #5ebe7e94; /* Your lanyard green color */
+    z-index: -1; /* Ensure it's behind your content */
+    transform: rotate(7deg); /* Rotates the div -95 degrees around the top right corner */
+    display: flex;
+    justify-content: center; /* Center the image container horizontally */
+    align-items: center; /* Center the image container vertically */
+    overflow: hidden; /* Ensures nothing overflows from the rotated div */
+}
+
+.g-image-container {
+    width: 50%; /* Adjust based on desired size of the circular image */
+    height: 80%; /* Adjust based on desired size of the circular image */
+    border-radius: 80%; /* Creates the circular shape */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-image-container img {
+    width: auto; /* Adjust width auto to maintain aspect ratio */
+    height: 150%; /* Make the image fit the height of the container */
+    transform: translateY(20%); /* Move the image down by X percent */
+}
+
 #home {
-    background: linear-gradient(to bottom, #ffffffd7 0%, #ffffffd7 90%, transparent 100%);
     font-weight: 200;
     font-style: normal;
     color: rgb(0, 0, 0);
-    padding: 20px 20px;
-    position: relative; /* Ensure relative positioning for absolute positioning of curved shape */
+    padding: 20px 60px;
+    position: relative;
 }
-
 
 #home h1 {
     font-family: "Spectral SC", serif;
