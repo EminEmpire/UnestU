@@ -48,6 +48,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; /* Ensure the lanyard is behind the navbar */
+    pointer-events: none; /* Allows clicks to pass through */
 }
 
 
@@ -106,7 +107,7 @@ body {
     right: 0;
     width: 49%; /* This will cover the right half of the screen */
     height: 65%; /* Adjust the height to your preference */
-    background-color: #5ebe7e94; /* Your lanyard green color */
+    background-color: #5ebe7e; /* Your lanyard green color */
     z-index: -1; /* Ensure it's behind your content */
     transform: rotate(7deg); /* Rotates the div -95 degrees around the top right corner */
     display: flex;
@@ -116,20 +117,34 @@ body {
 }
 
 .g-image-container {
+    position: relative; /* Ensure that the pseudo-element is positioned relative to this container */
     width: 50%; /* Adjust based on desired size of the circular image */
-    height: 80%; /* Adjust based on desired size of the circular image */
-    border-radius: 80%; /* Creates the circular shape */
+    height: 100%; /* Adjust based on desired size of the circular image */
+    border-radius: 0%; /* Creates the circular shape */
     overflow: hidden; /* Ensures the image fits within the circle */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.g-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0%; /* Match the border-radius of the .g-image-container */
+    background: radial-gradient(transparent, #5ebe7e00 99%); /* Adjust the color to match your background */
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
 .g-image-container img {
     width: auto; /* Adjust width auto to maintain aspect ratio */
     height: 150%; /* Make the image fit the height of the container */
-    transform: translateY(20%); /* Move the image down by X percent */
+    transform: translateY(26%); /* Move the image down by X percent */
 }
+
 
 #home {
     font-weight: 200;
