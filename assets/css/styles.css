@@ -114,6 +114,7 @@ body {
     justify-content: center; /* Center the image container horizontally */
     align-items: center; /* Center the image container vertically */
     overflow: hidden; /* Ensures nothing overflows from the rotated div */
+    box-shadow: 4px 22px 45px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .g-image-container {
