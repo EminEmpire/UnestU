@@ -65,21 +65,17 @@ body {
 
 /* Individual button styling */
 .nav-button {
-    border-radius: 0; /* Remove button border-radius */
-    border: 2px solid #000; /* Add black border */
+    border-radius: 100; /* Remove button border-radius */
     font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
     font-size: 1.7rem; /* Make button font size larger */
     letter-spacing: 1px;
     padding: 10px 40px; /* Increase padding to make button bigger */
 }
 
-.nav-button:hover {
-    border: 2px solid #000000; /* Add black border */
-}
+
 
 .btnsmsc {
     border-radius: 0; /* Remove button border-radius */
-    border: 2px solid #000; /* Add black border */
     font-family: "Bebas Neue", sans-serif; /* Apply Bebas Neue font */
     letter-spacing: 2px;
     font-size: 1.3rem; /* Make button font size larger */
@@ -87,7 +83,7 @@ body {
 }
 
 .btnsmsc:hover {
-    border: 2px solid #000000; /* Add black border */
+    border: 0px solid #000000; /* Add black border */
 }
 
 #home {
@@ -101,10 +97,8 @@ body {
 
 
 .image-container img.rounded-circle {
-    height: 30rem;
+    height: 3%;
     width: auto;
-    padding: 5px; /* Padding around the image */
-    background-color: white; /* Background to contrast the image */
 }
 
 .custom-button {
@@ -168,4 +162,12 @@ body {
     width: 100%;
     z-index: 1000;
     font-size: 14px; /* Adjusted font size */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .image-container img.rounded-circle {
+        height: 20rem;
+        width: auto;
+    }
 }
