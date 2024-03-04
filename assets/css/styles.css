@@ -291,9 +291,10 @@ body {
 }
 
 /* Adjustments for screens larger than 1024px */
-@media (min-width: 1025px) {
+@media (min-width: 1040px) {
     .green-background {
      overflow: hidden;
+     
     }
     .body {
         overflow: hidden;
