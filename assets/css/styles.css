@@ -234,6 +234,53 @@ body {
 }
 
 
+#contact-us {
+    background-color: #343A3F; /* Dark background color */
+    color: #fff; /* White text color */
+    margin-bottom: 0; /* Removes bottom margin */
+}
+
+#contact-us h2, #contact-us p {
+    margin-bottom: 1rem;
+}
+
+#contact-us h2 {
+    color: #fff; /* Ensures header text is white */
+}
+
+#contact-us label {
+    color: #ccc; /* Lighter text for labels for better contrast */
+    text-align: left; /* Ensures labels are aligned to the left */
+    display: block; /* Makes sure label takes the full width */
+}
+
+#contact-us .form-control {
+    background-color: #495057; /* Darker form fields for contrast */
+    border-color: #6c757d;
+    color: #fff; /* White text color for input */
+}
+
+#contact-us .form-control:focus {
+    background-color: #495057; /* Maintain background on focus */
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: none; /* Removes default Bootstrap shadow to match style */
+}
+
+#contact-us .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+}
+
+#contact-us .btn-primary:hover {
+    background-color: #0056b3; /* Darker on hover */
+    border-color: #004085;
+}
+
+/* Additional styles to ensure content is centered */
+#contact-us .form-group {
+    text-align: left; /* Aligns form elements to the left inside the centered column */
+}
 
 
 
