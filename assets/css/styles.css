@@ -238,7 +238,6 @@ body {
     background-color: #c4c4c4; /* Theme color */
     font-family: "Spectral SC", serif;
     color: #ffffff; /* White color for the text */
-    font-weight: bold;
     padding: 0; /* Removes padding to allow the button to fill the area */
 }
 
@@ -272,6 +271,10 @@ body {
     font-size: 126%;
     color: #343a40; /* Dark grey color for text for readability */
     padding: 20px; /* Padding inside the card body */
+}
+
+.slideshow-container-header {
+    font-family: "Spectral SC", serif;
 }
 
 .slideshow-container {
@@ -483,6 +486,10 @@ body {
         background-position-y: -140px; /* Adjust vertical positioning if needed */
         transform: none;
         margin-top: 10px; /* Adjust top margin if needed */
+    }
+
+    .section-header::after {
+        width: 40%; /* Adjust underline width for larger screens */
     }
 }
 
