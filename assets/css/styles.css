@@ -412,17 +412,25 @@ body {
 }
 
 .cookie-consent-banner {
-    background-color: #8193f9;
+    background-color: #002d52f6;
     color: rgb(255, 255, 255);
-    padding: 6px; /* Reduced padding */
+    padding: 0.1rem; /* Reduced padding */
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    font-size: 15px; /* Adjusted font size */
+    font-size: 0.8em; /* Adjusted font size */
 }
+
+#cookieConsentBanner button.btn-sm {
+    padding: 0.2rem 0.2rem; /* Adjust padding to make buttons smaller */
+    font-size: 0.8rem; /* Decrease font size for the text inside buttons */
+    line-height: 0.5; /* Adjust line height if necessary */
+    border-radius: 0.2rem; /* Adjust border-radius for slightly rounded corners */
+}
+
 
 @media (max-width: 768px) {
     .lanyard {
@@ -470,6 +478,10 @@ body {
 
     #locations .row > .col-md-6:last-child {
         order: 2;
+    }
+    
+    #cookieConsentBanner p {
+        font-size: 1rem; /* Adjust font size for mobile devices */
     }
 }
 
