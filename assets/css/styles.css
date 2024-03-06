@@ -66,14 +66,25 @@ body, html {
     text-decoration: underline;
 }
 
-/* Container for both buttons */
+/* If there are Donate + Get Help Buttons */
+/*
 .nav-buttons {
-    display: flex; /* Align buttons horizontally */
-    justify-content: center; /* Center buttons in the container */
-    gap: 20px; /* Space between buttons */
-    position: absolute; /* Position the buttons absolutely within a relative container */
-    right: 140px; /* Move to the left by reducing the right value */
-    bottom: 20px; /* Move up by increasing the bottom value */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    position: absolute; 
+    right: 140px; 
+    bottom: 20px; 
+}
+*/
+
+/* Get Help Button Only */
+.nav-buttons {
+    display: flex; 
+    justify-content: center; 
+    position: absolute; 
+    right: 15px; 
+    bottom: 220px; 
 }
 
 
