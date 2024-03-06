@@ -447,6 +447,9 @@ body, html {
 }
 
 
+
+
+
 @media (max-width: 768px) {
     .lanyard {
         display: none;
@@ -501,7 +504,7 @@ body, html {
 }
 
 /* Adjustments for tablet screens */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     .lanyard {
         display: none; /* Hide the lanyard on tablet screens as well */
     }
@@ -531,13 +534,4 @@ body, html {
     }
 }
 
-/* Adjustments for screens larger than 1024px */
-@media (min-width: 1040px) {
-    .green-background {
-     overflow: hidden;
-     
-    }
-    .body {
-        overflow: hidden;
-    }
-}
+
