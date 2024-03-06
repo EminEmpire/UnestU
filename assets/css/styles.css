@@ -301,7 +301,10 @@ body {
 
 
 
-
+#work-with-us .card {
+    background-color: #e7e7e7; /* Slightly lighter than the container for depth */
+    overflow: hidden; /* Ensures the child elements don't overflow */
+}
 
 #locations {
     text-align: center;
