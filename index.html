@@ -38,16 +38,17 @@
                 </div>
             </div>
         </nav>
-        <!-- Button group below the navbar, only on lg screens and up -->
-        <div class="container-fluid d-none d-lg-flex justify-content-end mt-2">
+        <!--
+        <div class="container-fluid d-none d-lg-flex mt-2">
             <div class="nav-buttons">
-            <!--     <button class="btn btn-success nav-button">Donate</button> -->
-                <button class="btn btn-primary nav-button">Get Help</button>
-            </div>
+        <button class="btn btn-primary nav-button" onclick="setInquiry('needingHelp')">Get Help</button>
+             </div>
         </div>
+        -->
+
         <!-- Full-width buttons for xs to md screens -->
         <div class="d-lg-none d-flex flex-column align-items-center mt-3">
-            <button class="btn btnsmsc btn-success w-100 mb-2">Donate</button>
+          <!--  <button class="btn btnsmsc btn-success w-100 mb-2">Donate</button> -->
             <button class="btn btnsmsc btn-primary w-100">Get Help</button>
         </div>
         <img src="assets/media/img/landyard.png"  height="500" alt="Lanyard Image" class="lanyard">
@@ -69,8 +70,8 @@
             <h1 class="text-center">Let's build a community <br> where every individual, regardless of their neurodiverse conditions, <br> finds not just shelter, but warmth and understanding.</h1>
             <p class="text-center">People with neurodiverse conditions often face discrimination in housing due to misconceptions and lack of accommodation. <br> By promoting awareness, fostering inclusive practices, and advocating for legislative protections, we aim to create equitable housing opportunities for all.</p>
             <div class="button-container text-center my-5">
-                <div class="custom-button help" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-hand-holding-heart"></i> GIVE HELP</div>
-                <div class="custom-button need" onclick="location.href='#';" style="cursor: pointer;"><i class="fas fa-hands-helping"></i> GET HELP</div>                
+                <div class="custom-button help" onclick="location.href='#work-with-us';" style="cursor: pointer;"><i class="fas fa-hand-holding-heart"></i> GIVE HELP</div>
+                <div class="custom-button need" onclick="setInquiry('needingHelp')" style="cursor: pointer;"><i class="fas fa-hands-helping"></i> GET HELP</div>                
             </div>
         </div>
     </section>
