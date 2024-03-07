@@ -297,12 +297,12 @@ body, html {
 }
 
 .btn-link.collapsed {
-    background-color: #292f34; /* Maintains background color when collapsed */
+    background-color: #697184; /* Maintains background color when collapsed */
 }
 
 .btn-link:not(.collapsed) {
     color: #ffffff; /* Keeps text white when expanded */
-    background-color: #000000; /* Slightly darker shade for expanded state */
+    background-color: #413F3D; /* Slightly darker shade for expanded state */
 }
 
 .card-body {
