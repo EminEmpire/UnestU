@@ -174,6 +174,15 @@ body, html {
     text-transform: uppercase;
 }
 
+.custom-button.participate {
+    background-color: #4CAF50; /* Green for participation */
+    color: white; /* White text */
+}
+
+.custom-button.need {
+    background-color: #2196F3; /* Blue for getting help */
+    color: white; /* White text */
+}
 
 
 .custom-button {
@@ -293,7 +302,7 @@ body, html {
 
 .btn-link:hover, .btn-link:focus {
     text-decoration: none; /* Keeps text decoration off */
-    color: #9e9e9e; /* Maintains white color text on hover/focus */
+    color: #d7d7d7; /* Maintains white color text on hover/focus */
 }
 
 .btn-link.collapsed {
