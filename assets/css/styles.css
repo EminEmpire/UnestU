@@ -456,6 +456,56 @@ body, html {
 }
 
 
+/* Adjustments for devices with screens up to 768px wide */
+@media (max-width: 768px) {
+    /* Adjust text sizes for better readability on smaller screens */
+    .nav-link, .btnsmsc, .section-header, h1, .card-header, .btn-link, .card-body {
+        font-size: 0.9em; /* Reduces font size for a more appropriate scale on smaller devices */
+    }
+
+    .responsive-header {
+        font-size: 30px;
+    }
+
+    .responsive-p {
+        font-size: 13px;
+    }
+
+    /* Make buttons smaller to fit better on smaller screens */
+    .custom-button, .nav-button, #contact-us .btn-primary {
+        padding: 10px 20px; /* Smaller padding to reduce button size */
+        font-size: smaller; /* Adjusts font size within buttons for smaller screens */
+    }
+
+    /* Adjust section padding for tighter spacing on smaller screens */
+    #home, #what-we-do, #locations, #contact-us {
+        padding: 0.1rem 0.1rem; /* Reduces vertical and horizontal padding */
+    }
+
+
+    #locations h2 {
+        font-size: 70px; /* Adjust the font size as desired */
+        text-align: center; /* Centers the text of h2 elements within #locations */
+    }
+
+    #locations p {
+        font-size: 20px; /* Adjust the font size as desired */
+        text-align: center; /* Centers the text of h2 elements within #locations */
+    }
+    
+
+    /* Adjust header sizes */
+    .section-header {
+        font-size: 4rem; /* Slightly smaller headers */
+    }
+
+    /* Adjust card styling for a cleaner layout on smaller devices */
+    .card {
+        margin-bottom: 1rem; /* Increases margin for better separation between cards */
+    }
+
+    
+}
 
 
 
