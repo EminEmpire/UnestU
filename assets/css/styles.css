@@ -545,10 +545,10 @@ body, html {
         margin-bottom: 10px; /* Adds margin to the bottom of each button */
     }
 
-    #locations {
-        text-align: left;
+    #locations h2 {
+        font-size: 70px; /* Adjust the font size as desired */
+        text-align: center; /* Centers the text of h2 elements within #locations */
     }
-
     #locations .row > .col-md-6:first-child {
         order: 1;
     }
